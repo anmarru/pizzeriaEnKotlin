@@ -10,5 +10,9 @@ class Controlador{
     fun filtradoDeIngredientes(alergenos :List<String>, ingredientes: List<IngredienteDTO>): List<IngredienteDTO> =
         ingredientes.filter { it.alergenos.none(){alergeno-> alergenos.contains(alergeno)} }
 
+    fun ordenarPizzasPorPrecio( pizzas: List<PizzaDTO>, ascendente: Boolean){
+        if(ascendente)pizzas.sortedBy { it.precio }
+        else pizzas.sortedByDescending { it.precio }
+    }
 
 }
