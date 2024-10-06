@@ -5,5 +5,5 @@ data class PizzaDTO (
     val nombre: String,
     val precio: Float,
     val size: SIZE,
-
+    val ingredientes: List<IngredienteDTO>
     )
