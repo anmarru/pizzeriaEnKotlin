@@ -39,7 +39,7 @@ fun main() {
     val listaPizzas= listOf(pizzaCuatroQuesos, pizzaHawai,pizzaPeperoni,pizzaPolloBacon,pizzaSetas, pizzaJamon)
     val listaIngredientes= listOf(queso, pollo, tomate, harinaDeTrigo, pinia, setas, cebolla, peperono, anchoas, jamon,bacon)
 
-    // PIZZAS POR PRECIO DE 7 Y 10
+    // PIZZAS POR PRECIO ENTRE 7 Y 10
     println(controlador.filtradoDePizzas(listaPizzas, 7f, 10f))
 
     //PIZZAS QUE NO TENGAN GLUTEN
